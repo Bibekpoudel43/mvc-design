@@ -9,8 +9,13 @@ class Mysql
        protected $result = null;
        protected $last_query = null;
 
-       public function __construct($host, $name, $user, $password=''){
-         $this->con = new \PDO("mysql:host='{$host}';dbname={$name}",$user,$password);
+       public function __construct(){
+           $host = config('db_host');
+           $name = config('db_name');
+           $user = config('db_user');
+           $pass = config('db_pass');
+
+         $this->con = new \PDO("mysql:host='{$host}';dbname={$name}",$user,$pass);
          $this->con->setAttribute(\PDO::ATTR_ERRMODE,\PDO::ERRMODE_EXCEPTION);
      }
 
