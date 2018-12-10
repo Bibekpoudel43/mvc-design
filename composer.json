@@ -1,0 +1,14 @@
+{
+    "name": "bibek1234567/mvc",
+    "require":{},
+    "autoload":{
+        "psr-4":{
+            "Apps\\":"apps/",
+            "System\\":"system/"
+        },
+        "files":[
+            "helpers/functions.php"
+        ]
+
+    }
+}
