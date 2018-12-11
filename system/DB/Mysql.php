@@ -30,6 +30,8 @@ class Mysql
          return $this->result->rowCount();
      }
      public function fetch_assoc(){
+
+           $this->result->setFetchMode(\PDO::FETCH_ASSOC);
          return $this->result->fetchAll();
      }
 
