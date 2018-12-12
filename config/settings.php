@@ -2,9 +2,9 @@
 $setting = [
 
     'url'=>'http://localhost/mvc',
-    'db_name'=>'',
-    'db_user'=>'',
-    'db_password'=>'',
-    'db_host'=>'',
+    'db_name'=>'newsportal',
+    'db_user'=>'admin',
+    'db_password'=>'root',
+    'db_host'=>'localhost',
     'timezone'=>'Asia/Kathmandu'
 ];

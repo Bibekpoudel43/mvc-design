@@ -15,7 +15,7 @@ class Mysql
            $user = config('db_user');
            $pass = config('db_pass');
 
-         $this->con = new \PDO("mysql:host='{$host}';dbname={$name}",$user,$pass);
+         $this->con = new \PDO("mysql:host=$host;dbname=$name",$user,$pass);
          $this->con->setAttribute(\PDO::ATTR_ERRMODE,\PDO::ERRMODE_EXCEPTION);
      }
 
