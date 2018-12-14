@@ -6,5 +6,6 @@ $setting = [
     'db_user'=>'admin',
     'db_password'=>'root',
     'db_host'=>'localhost',
-    'timezone'=>'Asia/Kathmandu'
+    'timezone'=>'Asia/Kathmandu',
+    'default_controller' => 'home'
 ];
