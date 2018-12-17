@@ -5,7 +5,5 @@ namespace System\Core;
 
 abstract class Controllers
 {
-
-    abstract public function index();
-
+abstract public function index();
 }
