@@ -13,4 +13,9 @@ class Article extends Models
 {
     protected $table = 'articles';
 
+
+    public function index()
+    {
+        echo "ram";
+    }
 }

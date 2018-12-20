@@ -66,7 +66,7 @@ class SystemInit
   private function loadController($url_parts)
   {
       $debug = config('debug');
-      $ctrlName = ucfirst($url_parts['controller'] . 'controller');
+      $ctrlName = ucfirst($url_parts['controller'] . 'Controller');
       if (is_file('apps/Controllers/' . $ctrlName . '.php')) {
           $className = "Apps\Controllers\\" . $ctrlName;
           $classObj = new $className;
